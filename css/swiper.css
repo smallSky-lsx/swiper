@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'iconfont';
+    /* project id 2382388 */
+    src: url('http://at.alicdn.com/t/font_2382388_n7xsr74cr4m.eot');
+    src: url('http://at.alicdn.com/t/font_2382388_n7xsr74cr4m.eot?#iefix') format('embedded-opentype'), url('http://at.alicdn.com/t/font_2382388_n7xsr74cr4m.woff2') format('woff2'), url('http://at.alicdn.com/t/font_2382388_n7xsr74cr4m.woff') format('woff'), url('http://at.alicdn.com/t/font_2382388_n7xsr74cr4m.ttf') format('truetype'), url('http://at.alicdn.com/t/font_2382388_n7xsr74cr4m.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: 'iconfont'!important;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.my-swiper-wrapper::after,
+.my-swiper-content::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* 轮播图内容组合方式 */
+
+.my-swiper-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.my-swiper-animate {
+    float: left;
+}
+
+.my-swiper-fade {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+
+/* 轮播图按钮 */
+
+.my-swiper-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    border: 0;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    z-index: 100;
+}
+
+.my-swiper-btn:focus {
+    outline: 0;
+}
+
+.my-swiper-btn:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.my-swiper-lbtn {
+    border-top-right-radius: 70% 50%;
+    border-bottom-right-radius: 70% 50%;
+    left: -3px;
+}
+
+.my-swiper-rbtn {
+    border-top-left-radius: 70% 50%;
+    border-bottom-left-radius: 70% 50%;
+    right: -3px;
+}
+
+
+/* 轮播图小圆点 */
+
+.my-swiper-cspots {
+    position: absolute;
+    bottom: 15px;
+    font-size: 0;
+    z-index: 100;
+}
+
+.my-swiper-cspots.center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my-swiper-cspots.left {
+    left: 5%;
+}
+
+.my-swiper-cspots.right {
+    right: 5%;
+}
+
+.my-swiper-spot {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease;
+}
+
+.my-swiper-spot-active {
+    width: 10px;
+    height: 10px;
+    left: 0;
+    top: 2px;
+    border-width: 3px;
+    margin: 0;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>扩展jQuery原型-轮播图</title>
+    <link rel="stylesheet" href="./css/swiper.css">
+    <style>
+        .cont1 {
+            background-color: #f40;
+        }
+        
+        .cont2 {
+            background-color: #ff0;
+        }
+        
+        .cont3 {
+            background-color: #00f;
+        }
+        
+        .cont4 {
+            background-color: #0f0;
+        }
+        
+        .item {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        -封装轮播图插件
+            a. 使用方式：
+                $('#wrapper').swiper({
+                    
+                });
+            b. 实现步骤：
+                + 扩展jQuery原型(实例)      (工具与实例，工具是构造函数或对象字面量，实例是构造函数实例化的对象)
+                + 确定插件传递的参数
+                    - 轮播图大小(width/height)
+                    - 轮播内容(content)：数组或类数组,必需
+                    - 轮播图按钮状态(lrBtnStatus)：always|hide|hover
+                    - 轮播图小圆点是否显示(isSpots)：true|false
+                    - 轮播图小圆点大小(spotSize)：
+                    - 轮播图位置(spotPos): left|center|right
+                    - 轮播方式(type)：animate|fade
+                    - 是否自动轮播(autoPlay): true|false
+                    - 动画持续时间(aTime): slow|normal|fast|number
+                    - 自动播放间隔时间(autoTime): number
+                +  
+
+        由结果推实现
+    -->
+    <!-- 轮播图 -->
+    <div id="wrapper" class="wrapper">
+        <!-- 轮播图内容 -->
+        <!-- <div class="my-swiper-content">
+            <div class="my-swiper-animate">
+                <div class="item cont1">1</div>
+            </div>
+            <div class="my-swiper-animate">
+                <div class="item cont2">2</div>
+            </div>
+            <div class="my-swiper-animate">
+                <div class="item cont3">3</div>
+            </div>
+            <div class="my-swiper-animate">
+                <div class="item cont4">4</div>
+            </div>
+        </div> -->
+        <!-- 轮播图左右按钮 -->
+        <!-- <div class="my-swiper-cbtn">
+            <button class="my-swiper-btn my-swiper-lbtn iconfont">&#xe72a;</button>
+            <button class="my-swiper-btn my-swiper-rbtn iconfont">&#xe71a;</button>
+        </div> -->
+        <!-- 轮播图小圆点 -->
+        <!-- <div class="my-swiper-cspots center">
+            <span class="my-swiper-spot my-swiper-spot-active"></span>
+            <span class="my-swiper-spot"></span>
+            <span class="my-swiper-spot"></span>
+            <span class="my-swiper-spot"></span>
+        </div> -->
+    </div>
+    <div class="item cont1">1</div>
+    <div class="item cont2">2</div>
+    <div class="item cont3">3</div>
+    <div class="item cont4">4</div>
+    <script src="./js/lib/jquery-3.4.1.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+
+</html>
